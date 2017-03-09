@@ -9,8 +9,8 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Zandero Sitemap Generaotr</name>
-    <description>Zandero sitemap utilities</description>
+    <name>Zandero</name>
+    <description>sitemap reader and writer</description>
     <url>http://www.zandero.com</url>
     <inceptionYear>2017</inceptionYear>
 
