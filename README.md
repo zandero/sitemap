@@ -29,5 +29,7 @@ List<String> map = generator.generate();
 ```
 
 ## Reader
+```java
 SitemapReader reader = new SitemapReader();
 List<WebPage> pages = reader.read(sitemap);
+```
