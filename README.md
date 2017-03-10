@@ -1,5 +1,6 @@
 # sitemap
 Simple `sitemap.xml` generator and reader
+Currently supports only
 
 ## Setup
 ```xml
@@ -10,7 +11,7 @@ Simple `sitemap.xml` generator and reader
 </dependency>
 ```
 
-## Generator
+## Sitemap generator
 
 ```java
 SitemapGenerator generator = new SitemapGenerator("http://some.domain.com");
@@ -28,7 +29,23 @@ generator.add(page);
 List<String> map = generator.generate();
 ```
 
-## Reader
+### Output
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+		<url>
+			<loc>http://some.domain.com/this/site</loc>
+			<lastmod>2016-10-18T15:15:04.000Z</lastmod>
+			<changefreq>daily</changefreq>
+			<priority>0.6</priority>
+		</url>
+</urlset>
+```
+
+## Sitemap reader
+
+Reads in a given XML file or String and de-serializes it to list of WebPages
+
 ```java
 SitemapReader reader = new SitemapReader();
 List<WebPage> pages = reader.read(sitemap);
