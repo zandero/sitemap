@@ -1,6 +1,6 @@
 # sitemap
-Simple `sitemap.xml` generator and reader
-Currently supports only
+Simple `sitemap.xml` generator and reader for single sitemap.xml files.  
+ 
 
 ## Setup
 ```xml
